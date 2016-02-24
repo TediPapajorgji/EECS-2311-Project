@@ -35,13 +35,13 @@ Negative factorial gives 1 (negative factorial should actually be invalid)
 If you do 1 ENTER 2 ENTER 3 ENTER, an operation on 3 and 2 (for example +), selecting the 1st index (value = 1) doesn't work
 	- The span and range in console show a value of 1, but should be 2 since 2 values in stack
 	- This means that any history before operation may not be in stack
-	- BUT (and this gets confusing) if without selecting, after adding doing something like adding again will add the '1' 		  to '5'
+	- BUT (and this gets confusing) if without selecting, after adding doing something like adding again will add the '1' to '5'
 
 Any number with the tenth decimal 0 will instead be rounded to 3 decimal places instead of 2.
 	- Adding or multiplying any two numbers with this trait will give a 3 decimal place answer. Otherwise, it is 2 decimal places.
 
 Combining the two above (traits and operations done), SELECTing the first index will yield the same result.
-	- Selecting and undoing the 1st number won't actually do anything since right after, pressing + will add all three 		  values.
+	- Selecting and undoing the 1st number won't actually do anything since right after, pressing + will add all three values.
 
 Rounding decimal points to 2 isn't always accurate (like with trig functions)
 
@@ -55,10 +55,8 @@ Finding the sin or cos of:
 			- entering a new integer then ENTER after exception will find the cos/sine of that integer
 			- entering a decimal with the first two decimal places other than 0 and the third > 5 will give error
 			- entering something like (6.005) will calculate the cos/sine button previously pressed for (6.005)
-				- further sin/cos functions with the two decimal place 0s and third < 6 will not throw an 
-				  exception, but instead work until CLEAR is pressed
-				- entering something like 180 ENTER will display "180 | 180,5" since 5 was the number causing
-				  the exception
+				- further sin/cos functions with the two decimal place 0s and third < 6 will not throw an exception, but instead work until CLEAR is pressed
+				- entering something like 180 ENTER will display "180 | 180,5" since 5 was the number causing the exception
 
 Doing 5.001 ENTER COS CLEAR 10 ENTER finds cos(10) ***Is this a bug/error?
 
